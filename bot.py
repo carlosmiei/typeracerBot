@@ -12,8 +12,9 @@ time.sleep(2)
 
 text = driver.find_element_by_class_name("gameView").text
 text = text.split("\n")
-print(text)
+
 print(text[-3])
+time.sleep(15)
 pyautogui.typewrite(text[-3], interval = 0.05)
 time.sleep(20)
 driver.quit()
